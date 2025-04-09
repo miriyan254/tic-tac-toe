@@ -1,7 +1,13 @@
+import GameBoard from './components/GameBoard';
+
 function App() {
-   
 
-  return;
-}
+  return (
+    <main>
+      <GameBoard />  
+    </main>
+  );
+  
+} 
 
-export default App
+export default App;

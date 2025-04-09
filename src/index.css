@@ -1,1 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+html {
+    font-size: 62.5%;
+}
+  
+main { 
+    height: 100vh;
+    background-color: SkyBlue;  
+}
+  
+ul {
+    list-style-type: none;
+    height: 75vh;
+    width: 50vw;
+    display: grid;  
+    /*
+    justify-items: stretch; 
+    align-items: stretch; 
+    */
+}
 
+li {
+    display: grid;
+    /*
+    justify-items: stretch; 
+    align-items: stretch; 
+    */    
+}
