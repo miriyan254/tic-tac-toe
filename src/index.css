@@ -22,6 +22,8 @@ ul {
     justify-items: stretch; 
     align-items: stretch; 
     */
+    grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
 }
 
 li {
