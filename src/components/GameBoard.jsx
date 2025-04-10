@@ -1,11 +1,13 @@
 import Button from './Button';
 
+const initialBoard = [null, null, null, null, null, null, null, null, null];
+
 function GameBoard() {
 
   return (
-      <ul>
-		   <li><Button></Button></li> 
-	    </ul>   
+      	<ul>
+		{ initialBoard.map( (mark, i) => <li key={i}><Button>{mark}</Button></li> ) }
+	</ul>   
   );
   
 }
