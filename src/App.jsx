@@ -1,10 +1,12 @@
 import GameBoard from './components/GameBoard';
+import Button from './components/Button';
 
 function App() {
 
   return (
     <main>
-      <GameBoard />  
+      <GameBoard />
+      <Button>New Game</Button>  
     </main>
   );
   
