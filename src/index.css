@@ -11,6 +11,10 @@ html {
 main { 
     height: 100vh;
     background-color: SkyBlue;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /*flex-start*/
+    align-items: center; /*stretch*/
 }
   
 ul {
@@ -33,3 +37,10 @@ li {
     align-items: stretch; 
     */    
 }
+
+.new {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    background-color: RoyalBlue;
+    color: white;
+} 
