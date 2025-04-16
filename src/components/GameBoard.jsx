@@ -4,7 +4,7 @@ import Button from './Button';
 const initialBoard = [null, null, null, null, null, null, null, null, null];
 
 function deriveGameBoard(gms) {
-  const board = initialBoard;
+  const board = [...initialBoard];
   for (const gm of gms) { board[gm.sqInd] = gm.sqMark; }
   return board;
 }
@@ -18,10 +18,17 @@ function GameBoard() {
 
   const currBoard = deriveGameBoard(moves);
 
+function handleNewGame(){
+  setMoves([]);
+}
+
   return (
-      	<ul>
-		{currBoard.map( (mark, i) => <li key={i}><Button handleOnClick={() => handleMove(i)}>{mark}</Button></li> )}
-	</ul>   
+    <main>
+      <ul>
+        {currBoard.map( (mark, i) => <li key={i}><Button handleOnClick={() => handleMove(i)}>{mark}</Button></li> )} 
+      </ul>
+      <Button handleOnClick={handleNewGame}>New Game</Button>  
+    </main>   
   );
   
 }
