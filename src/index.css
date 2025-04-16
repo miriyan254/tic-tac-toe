@@ -48,3 +48,7 @@ li {
 .square {
     font-size: 10rem;
 }
+
+.winner {
+	background-color: SeaGreen;
+}
